@@ -27,10 +27,9 @@ let oneEuroIs = {
 }
 
 function fromDollarToYen(dollar){
-   let euro = dollar/oneEuroIs.USD;
-   let euroToYen = euro*oneEuroIs.JPY;
-   return euroToYen
-
+    let euro = dollar / oneEuroIs.USD;
+    let euroToYen = euro * oneEuroIs.JPY;
+    return euroToYen;
 }
 console.log(fromDollarToYen(3));
 
@@ -41,11 +40,7 @@ function fromYenToPound(yen) {
 }
 console.log(fromYenToPound(5));
 
-
-
-
-
-module.exports = { sum, fromYenToPound, fromDollarToYen, fromEuroToDollar };
+module.exports = { sum, fromYenToPound, fromDollarToYen, fromEuroToDollar, oneEuroIs };
 
 
 
